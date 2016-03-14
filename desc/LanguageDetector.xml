@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <annotatorImplementationName>org.apache.uima.components.languagedetector.LanguageDetector</annotatorImplementationName>
+    <primitive>true</primitive> 
+    <analysisEngineMetaData>
+        <name>Language Detector</name>
+        <version>1.0</version>
+        <typeSystemDescription>
+            <types>
+                <typeDescription>
+                    <name>org.apache.uima.types.Metadata</name>
+                    <description/>
+                    <supertypeName>uima.tcas.DocumentAnnotation</supertypeName>
+                </typeDescription>
+            </types>
+        </typeSystemDescription>
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs>
+                    <type allAnnotatorFeatures="true">org.apache.uima.types.Metadata</type>
+                </outputs>
+                <languagesSupported/>
+            </capability>
+        </capabilities>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+            <outputsNewCASes>false</outputsNewCASes>
+        </operationalProperties>		
+    </analysisEngineMetaData>
+</analysisEngineDescription>
